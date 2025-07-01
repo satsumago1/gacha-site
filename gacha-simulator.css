@@ -1,0 +1,298 @@
+/*global*/
+* {
+  margin: 0;
+}
+/*body*/
+body {
+  background-color: #fff9e8;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+}
+/* main content */
+.main-content {
+  width: 50%;
+  margin: 3em auto;
+  text-align: center;
+}
+/* headings */
+h1 {
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  margin: 3em 4em;
+}
+h2 {
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 28px;
+}
+/*img */
+.gacha-img {
+  display: block;
+  margin: 1em auto;
+  width: 50%;
+  height: 21em;
+  background: url("https://cdn.glitch.global/da01a152-83d6-461f-8c8e-acd6d32e318a/gahcabox.png?v=1747500963462");
+  background-size: contain;
+  border-radius: 8px;
+}
+/*animation for img*/
+.gacha-img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+/*buttons */
+.token-button-columns {
+  width: 10em;
+  height: 40px;
+  padding: 12px;
+  justify-content: space-between;
+  border: 1px solid #7e6362;
+  border-radius: 16px;
+  margin: auto;
+  display: flex;
+  gap: 8px;
+}
+#pull-button {
+  margin: 1em 0 2em 0;
+  background: #1e36eb;
+  color: #fff9e8;
+  border: none;
+  border-radius: 16px;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 12px 64px;
+  cursor: pointer;
+}
+/*columns for token button*/
+.column-1 {
+  margin: auto;
+}
+.column-2 {
+  margin: auto;
+}
+.add-token-button {
+  width: 40px;
+  height: 40px;
+  background: #1e36eb;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  border: none;
+  color: #fff9e8;
+  font-size: 28px;
+  font-family: "Inria Sans", sans-serif;
+  text-decoration: none;
+  font-weight: 700;
+  font-style: normal;
+}
+/*modal*/
+.pet-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6); /* black w/ opacity */
+}
+.pet-modal-content {
+  background-color: #fff9e8;
+  margin: 6% auto;
+  padding: 24px;
+  width: 25%;
+  border-radius: 8px;
+}
+/*modal close button*/
+.close-button {
+  color: #aaaaaa;
+  float: right;
+  font-size: 18px;
+  font-weight: bold;
+}
+.close-button:hover,
+.close-button:focus {
+  color: #1e36eb;
+  text-decoration: none;
+  cursor: pointer;
+}
+/*pet image in modal*/
+.pet-img {
+  width: 320px;
+  height: 320px;
+  margin: 1em 0;
+  object-fit: cover;
+}
+/*nav*/
+nav {
+  background: #1e36eb;
+  padding: 16px 32px;
+  color: #fff9e8;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+}
+.nav-link {
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #fff9e8;
+  font-size: 20px;
+  font-size: 20px;
+  color: #fff9e8;
+  text-decoration: none;
+}
+/*side nav*/
+.side-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #fffbf1;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 6em;
+  text-align: center;
+}
+.side-nav a {
+  text-decoration: none;
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin: 0;
+  font-size: 2em;
+  color: #c7c9ea;
+  display: block;
+  padding: 48px;
+  transition: 0.3s;
+}
+.side-nav a:hover {
+  color: #1e36eb;
+}
+/* side nav X button */
+.side-nav .close-button {
+  position: absolute;
+  top: 16px;
+  right: 3em;
+  color: #fff9e8;
+  width: 5px;
+  height: 5px;
+  background: #1e36eb;
+  border-radius: 50%;
+}
+
+/* footer*/
+footer {
+  background: #1e36eb;
+  padding: 24px;
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+footer img {
+  width: 36px;
+  height: 36px;
+}
+.social-media-item {
+  display: flex;
+  padding-left: 8px;
+  padding-right: 8px;
+  justify-content: center;
+}
+.social-media-link {
+  list-style: none;
+  padding: 1em;
+}
+.main-nav-items {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: #c7c9ea;
+}
+.main-nav-link {
+  display: block;
+  color: #fff9e8;
+  font-size: 1em;
+  text-decoration: none;
+  padding: 16px;
+}
+/* responsive styles for mobile users*/
+@media (max-width: 600px) {
+  /*body*/
+  p {
+    font-size: 16px;
+  }
+  /*heading*/
+  h1 {
+    text-align: center;
+    margin: 2em 0;
+  }
+  .gacha-img {
+    width: 100%;
+  }
+  /*side nav*/
+  .side-nav {
+    text-align: right;
+    font-size: 16px;
+  }
+  .side-nav a {
+    color: #1e36eb;
+    padding: 40px;
+  }
+  /* side nav X button */
+  .side-nav .close-button {
+    top: 16px;
+    margin-bottom: 16px;
+    right: 1em;
+  }
+  /*modal */
+  .pet-modal-content {
+    background-color: #fff9e8;
+    margin: 10% auto;
+    padding: 24px;
+    width: 75%;
+    border-radius: 8px;
+  }
+  /*pet image in modal*/
+  .pet-img {
+    width: 300px;
+    height: 300px;
+    margin: 1em 0;
+    object-fit: cover;
+  }
+  /*footer*/
+  footer img {
+    width: 40px;
+    height: 40px;
+  }
+  .main-nav-items {
+    display: block;
+  }
+  .social-media-item {
+    justify-content: left;
+  }
+}

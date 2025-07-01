@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>your collection</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial scale-1" />
+    <link
+      id="favicon"
+      rel="icon"
+      href="https://cdn.glitch.global/da01a152-83d6-461f-8c8e-acd6d32e318a/favicon.png?v=1747470111830"
+      type="image/x-icon"
+    >
+    <link rel="stylesheet" href="possible-pets.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Kosugi+Maru&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="possible-pets.js"></script>
+  </head>
+  <body>
+
+    <!--nav-->
+    <nav>
+      <!--home-->
+      <a class="nav-link" href="index.html">GACHA GACHA</a>
+      <!--div for side navigation-->
+      <div id="sideNav" class="side-nav">
+        <!--close button -->
+        <a href="javascript:void(0)" class="close-button" onclick="closeNav()"
+          >&times;</a
+        >
+        <!--menu links-->
+        <a href="about.html">about</a>
+        <a href="gacha-simulator.html">gacha simulator</a>
+        <a href="possible-pets.html">possible pets</a>
+        <a href="quiz.html">quiz</a>
+      </div>
+      <!--menu button -->
+      <p class="nav-link" style="cursor: pointer" onclick="openNav()">menu</p>
+    </nav>
+
+    <!--main-->
+    <main>
+      <h1>possible pets</h1>
+      <div class="main-content">
+        <h2>Pet Friends</h2>
+        <div id="pet-container"> 
+        </div>
+        <p>want more?</p>
+        <a class="button" href="gacha-simulator.html">go to gacha</a>
+      </div>
+    </main>
+
+    <!--footer-->
+    <footer>
+      <ul class="social-media-item">
+        <li class="social-media-link">
+          <a href="mailto:jjaesun.chong@gmail.com">
+            <img
+              src="https://cdn.glitch.global/da01a152-83d6-461f-8c8e-acd6d32e318a/email.png?v=1746722548675"
+              alt="icon of email"
+            />
+          </a>
+        </li>
+        <li class="social-media-link">
+          <a href="https://www.linkedin.com/in/sun-chong/">
+            <img
+              src="https://cdn.glitch.global/da01a152-83d6-461f-8c8e-acd6d32e318a/linkedin.png?v=1746722902208"
+              alt="icon of linkedin"
+            />
+          </a>
+        </li>
+      </ul>
+      <ul class="main-nav-items">
+        <li>
+          <a class="main-nav-link" href="index.html">Home</a>
+        </li>
+        <li>
+          <a class="main-nav-link" href="about.html">About</a>
+        </li>
+        <li>
+          <a class="main-nav-link" href="gacha-simulator.html"
+            >Gacha Simulator</a
+          >
+        </li>
+        <li>
+          <a class="main-nav-link" href="your-collection.html"
+            >Your Collection</a
+          >
+        </li>
+        <li>
+          <a class="main-nav-link" href="quiz.html">Quiz</a>
+        </li>
+      </ul>
+      <p class="main-nav-items">&copy; 2025 Sun Chong</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,279 @@
+/*global*/
+* {
+  margin: 0;
+}
+/*body*/
+body {
+  background-color: #fff9e8;
+}
+
+/* headings */
+h1 {
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+}
+h2 {
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+  padding-bottom: 1em;
+}
+/*main text*/
+p {
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 28px;
+}
+/*main*/
+main {
+  margin: 3em 4em;
+}
+/*links*/
+.button {
+  background: #1e36eb;
+  border-radius: 16px;
+  padding: 12px 64px;
+  font-size: 16px;
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  border: none;
+  text-align: center;
+  color: #fff9e8;
+  text-decoration: none;
+  display: block;
+  width: 6em;
+  margin: 1em auto 2em auto;
+}
+.source {
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  border: none;
+  text-decoration: none;
+}
+/*nav*/
+nav {
+  background: #1e36eb;
+  padding: 16px 32px;
+  color: #fff9e8;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+}
+.nav-link {
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #fff9e8;
+  font-size: 20px;
+  font-size: 20px;
+  color: #fff9e8;
+  text-decoration: none;
+}
+/*side nav*/
+.side-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #fffbf1;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 6em;
+  text-align: center;
+}
+.side-nav a {
+  text-decoration: none;
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin: 0;
+  font-size: 2em;
+  color: #c7c9ea;
+  display: block;
+  padding: 48px;
+  transition: 0.3s;
+}
+.side-nav a:hover {
+  color: #1e36eb;
+}
+/* side nav X button */
+.side-nav .close-button {
+  position: absolute;
+  top: 16px;
+  right: 3em;
+  color: #fff9e8;
+  width: 5px;
+  height: 5px;
+  background: #1e36eb;
+  border-radius: 50%;
+}
+/*media*/
+img {
+  width: 100%;
+  background-size: contain;
+  border-radius: 8px;
+}
+.column-with-img-1 {
+  width: 100%;
+  background-size: contain;
+  border-radius: 8px;
+}
+.video-container {
+  width: 608px;
+  height: 342px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+/* footer*/
+footer {
+  background: #1e36eb;
+  padding: 24px;
+}
+footer img {
+  width: 36px;
+  height: 36px;
+}
+.social-media-item {
+  display: flex;
+  padding-left: 8px;
+  padding-right: 8px;
+  justify-content: center;
+}
+.social-media-link {
+  list-style: none;
+  padding: 1em;
+}
+.main-nav-items {
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: #c7c9ea;
+}
+.main-nav-link {
+  display: block;
+  color: #fff9e8;
+  font-size: 1em;
+  text-decoration: none;
+  padding: 16px;
+}
+/*rows*/
+.row {
+  margin: 1em 0;
+  display: flex;
+  margin-bottom: 2em;
+}
+.row-2 {
+  margin-top: 1em;
+}
+/*columns*/
+.column-1 {
+  padding: 0 2em 0 0;
+}
+.column-3 {
+  text-align: right;
+}
+.column-4 {
+  text-align: center;
+  margin-bottom: 7em;
+}
+.column-middle-text {
+  padding: 0 0 0 2em;
+  margin: auto;
+}
+.column-with-img-2 {
+  margin-left: 0;
+}
+
+/* responsive styles for mobile users*/
+@media (max-width: 600px) {
+  /*heading*/
+  h1 {
+    text-align: center;
+    margin-bottom: 2em;
+  }
+  h2 {
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 22px;
+    padding-bottom: 8px;
+  }
+  /*side nav*/
+  .side-nav {
+    text-align: right;
+    font-size: 16px;
+  }
+  .side-nav a {
+    color: #1e36eb;
+    padding: 40px;
+  }
+  /* side nav X button */
+  .side-nav .close-button {
+    top: 16px;
+    margin-bottom: 16px;
+    right: 1em;
+  }
+  /*main text*/
+  p {
+    font-family: "Kosugi Maru", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  /*main*/
+  main {
+    margin: 2em;
+  }
+  /*media*/
+
+  .column-with-img-1 {
+    margin-top: 1em;
+  }
+  .video-container {
+    width: 304px;
+    height: 171px;
+
+  }
+/*columns*/
+.column-3 {
+  text-align: center;
+}
+.column-middle-text {
+  padding: 0;
+  margin: 0;
+}
+.row {
+  margin: 1em 0;
+  display: block;
+  margin-bottom: 2em;
+}
+  /*footer*/
+  footer img {
+    width: 40px;
+    height: 40px;
+  }
+  .main-nav-items {
+    display: block;
+  }
+  .social-media-item {
+    justify-content: left;
+  }
+}

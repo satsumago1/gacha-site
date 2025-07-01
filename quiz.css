@@ -1,0 +1,247 @@
+/*global*/
+* {
+  margin: 0;
+}
+/*body*/
+body {
+  background-color: #fff9e8;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 28px;
+  font-size: 18px;
+}
+/* paragraph text */
+#congratulations {
+  margin: 1em 0;
+}
+/* headings */
+h1 {
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  padding: 1em 0;
+}
+/* main content*/
+.main-content {
+  width: 50%;
+  margin: auto;
+}
+.intro-text {
+  padding: 1em 0;
+  text-align: center;
+}
+/*form*/
+.input {
+  margin-bottom: 4em;
+}
+label {
+  display: block;
+  padding: 8px 0;
+}
+.text-input {
+  margin-top: 8px;
+  width: 50%;
+  padding: 4px;
+}
+.dropdown {
+  background-color: white;
+  border: 1px solid grey;
+  border-radius: 2px;
+  padding: 4px;
+  width: 25%;
+}
+/*nav*/
+nav {
+  background: #1e36eb;
+  padding: 16px 32px;
+  color: #fff9e8;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+}
+.nav-link {
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #fff9e8;
+  font-size: 20px;
+  font-size: 20px;
+  color: #fff9e8;
+  text-decoration: none;
+}
+/*side nav*/
+.side-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #fffbf1;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 6em;
+  text-align: center;
+}
+
+.side-nav a {
+  text-decoration: none;
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin: 0;
+  font-size: 2em;
+  color: #c7c9ea;
+  display: block;
+  padding: 48px;
+  transition: 0.3s;
+}
+.side-nav a:hover {
+  color: #1e36eb;
+}
+/* side nav X button */
+.side-nav .close-button {
+  position: absolute;
+  top: 16px;
+  right: 3em;
+  color: #fff9e8;
+  width: 5px;
+  height: 5px;
+  background: #1e36eb;
+  border-radius: 50%;
+}
+/* button*/
+.submit-button {
+  display: block;
+  text-align: center;
+}
+#go-to-gacha-btn-container a {
+  border: 1px solid #7e6362;
+  border-radius: 16px;
+  width: 92px;
+  padding: 10px 50px;
+  font-size: 18px;
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  color: #1e36eb;
+  text-decoration: none;
+  display: block;
+  margin: 1em auto 0 auto;
+}
+button {
+  background: #1e36eb;
+  border-radius: 16px;
+  padding: 12px 64px;
+  border: none;
+  color: #fff9e8;
+  font-size: 18px;
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+}
+
+/*img */
+.splash-img {
+  width: 100%;
+  height: 15em;
+  background: url("https://cdn.glitch.global/da01a152-83d6-461f-8c8e-acd6d32e318a/17973871.jpg?v=1747483596240");
+  background-size: contain;
+  border-radius: 8px;
+}
+/* footer*/
+footer {
+  background: #1e36eb;
+  padding: 24px;
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+footer img {
+  width: 36px;
+  height: 36px;
+}
+.social-media-item {
+  display: flex;
+  padding-left: 8px;
+  padding-right: 8px;
+  justify-content: center;
+}
+.social-media-link {
+  list-style: none;
+  padding: 1em;
+}
+.main-nav-items {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: #c7c9ea;
+}
+.main-nav-link {
+  display: block;
+  color: #fff9e8;
+  font-size: 1em;
+  text-decoration: none;
+  padding: 16px;
+}
+/* responsive styles for mobile users*/
+@media (max-width: 600px) {
+  /*heading*/
+  h1 {
+    text-align: center;
+  }
+  /*form*/
+  .input {
+    margin-bottom: 3em;
+  }
+  /*side nav*/
+  .side-nav {
+    text-align: right;
+    font-size: 16px;
+  }
+  .side-nav a {
+    color: #1e36eb;
+    padding: 40px;
+  }
+  /* side nav X button */
+  .side-nav .close-button {
+    top: 16px;
+    margin-bottom: 16px;
+    right: 1em;
+  }
+  /*form*/
+  label {
+    display: block;
+    padding: 8px 0;
+  }
+  .text-input {
+    margin-top: 8px;
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+  }
+  .dropdown {
+    font-size: 16px;
+    width: 100%;
+  }
+  /*footer*/
+  footer img {
+    width: 40px;
+    height: 40px;
+  }
+  .main-nav-items {
+    display: block;
+  }
+  .social-media-item {
+    justify-content: left;
+  }
+}
